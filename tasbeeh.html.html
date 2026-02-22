@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Tasbeeh Counter - Islamic Companion
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+ </head>
+ <body class="bg-gradient-to-b from-[#F5F5F5] to-[#E8F5E9] min-h-screen">
+  <!--- START: Header --->
+  <!--- DESCRIPTION: App bar with title and settings button --->
+  <header class="bg-[#1B5E20] text-white shadow-md">
+   <div class="flex items-center justify-between px-4 py-4">
+    <div class="w-10">
+    </div>
+    <div class="flex flex-col items-center">
+     <p class="text-[14px] text-white/80">Welcome to Mohammad Rashid App</p>
+     <h1 class="text-[22px] font-semibold">
+      Tasbeeh Counter
+     </h1>
+    </div>
+    <button class="w-10 h-10 flex items-center justify-center">
+     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+      <path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      </path>
+      <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      </path>
+     </svg>
+    </button>
+   </div>
+  </header>
+  <!--- END --->
+  <!--- START: Main Counter Section --->
+  <!--- DESCRIPTION: Central counter display with tap button and progress indicator --->
+  <main class="flex flex-col items-center justify-center px-4 py-12">
+   <div class="text-center mb-2 mt-8">
+    <p class="text-[18px] text-[#757575]">
+     Current Count
+    </p>
+   </div>
+   <div class="mb-4">
+    <p class="text-[80px] font-bold text-[#1B5E20] leading-none">
+     0
+    </p>
+   </div>
+   <div class="bg-white rounded-full px-6 py-2 shadow-sm mb-12">
+    <p class="text-[16px] text-[#757575]">
+     Target: 33
+    </p>
+   </div>
+   <div class="relative w-[280px] h-[280px] mb-12">
+    <svg class="w-full h-full transform -rotate-90" viewbox="0 0 280 280">
+     <circle cx="140" cy="140" fill="none" r="134" stroke="rgba(255,255,255,0.5)" stroke-width="12">
+     </circle>
+     <circle cx="140" cy="140" fill="none" r="134" stroke="#1B5E20" stroke-dasharray="842" stroke-dashoffset="842" stroke-linecap="round" stroke-width="12">
+     </circle>
+    </svg>
+    <div class="absolute inset-0 flex items-center justify-center">
+     <div class="w-[220px] h-[220px] rounded-full bg-gradient-to-br from-[#1B5E20] to-[#4CAF50] shadow-2xl flex items-center justify-center" style="box-shadow: 0 20px 40px rgba(27, 94, 32, 0.4);">
+      <span class="text-white text-[32px] font-bold tracking-[4px]">
+       TAP
+      </span>
+     </div>
+    </div>
+   </div>
+   <div>
+    <button class="px-8 py-4 border-2 border-[#1B5E20] text-[#1B5E20] rounded-xl flex items-center gap-2 font-medium">
+     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+      <path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      </path>
+     </svg>
+     <span>
+      Reset
+     </span>
+    </button>
+   </div>
+  </main>
+  <!--- END --->
+  <!--- START: Bottom Navigation --->
+  <!--- DESCRIPTION: Fixed bottom navigation bar with five main app sections --->
+  <nav class="fixed bottom-0 left-0 right-0 bg-white shadow-lg">
+   <div class="flex items-center justify-around h-16">
+    <div class="flex flex-col items-center justify-center w-16">
+     <svg class="w-6 h-6 text-[#757575]" fill="currentColor" viewbox="0 0 24 24">
+      <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z">
+      </path>
+     </svg>
+     <span class="text-[12px] text-[#757575] mt-1">
+      Home
+     </span>
+    </div>
+    <div class="flex flex-col items-center justify-center w-16">
+     <svg class="w-6 h-6 text-[#757575]" fill="currentColor" viewbox="0 0 24 24">
+      <path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z">
+      </path>
+     </svg>
+     <span class="text-[12px] text-[#757575] mt-1">
+      Quran
+     </span>
+    </div>
+    <div class="flex flex-col items-center justify-center w-16">
+     <svg class="w-6 h-6 text-[#757575]" fill="currentColor" viewbox="0 0 24 24">
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z">
+      </path>
+     </svg>
+     <span class="text-[12px] text-[#757575] mt-1">
+      Shorts
+     </span>
+    </div>
+    <div class="flex flex-col items-center justify-center w-16">
+     <svg class="w-6 h-6 text-[#757575]" fill="currentColor" viewbox="0 0 24 24">
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z">
+      </path>
+     </svg>
+     <span class="text-[12px] text-[#757575] mt-1">
+      Qibla
+     </span>
+    </div>
+    <div class="flex flex-col items-center justify-center w-16">
+     <svg class="w-6 h-6 text-[#1B5E20]" fill="currentColor" viewbox="0 0 24 24">
+      <circle cx="12" cy="12" fill="none" r="10" stroke="currentColor" stroke-width="2">
+      </circle>
+     </svg>
+     <span class="text-[12px] text-[#1B5E20] mt-1 font-medium">
+      Tasbeeh
+     </span>
+    </div>
+   </div>
+  </nav>
+  <!--- END --->
+ </body>
+</html>
